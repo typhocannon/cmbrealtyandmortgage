@@ -1,0 +1,56 @@
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background: #151515;
+    color: rgb(194, 161, 63);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+  
+.texts-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-text {
+    font-size: 60px;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+
+.below-texts {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main-text span {
+    transition: opacity 0.25s ease;
+}
+
+.below-texts {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.animation-complete .below-texts.fade-in {
+    opacity: 1;
+}
+
+.animation-done {
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+}
