@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 import { Parallax } from 'react-parallax';
 import { Button, Fade } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { createTheme, ThemeProvider, ImageList, ImageListItem } from '@mui/material';
 import Typed from 'typed.js'
 
 // Import Swiper styles
@@ -15,7 +14,7 @@ import 'swiper/css/navigation';
 
 import './Home.css';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import ImageBoard from '../imgBoard/ImgBoard';
 import Slider from '../slider/Slider';
 import Ham_Button from '../ham_button/Ham_Button';
 
@@ -67,7 +66,6 @@ function Home() {
       fontFamily: "Cambria, Cochin, Georgia, 'Times New Roman', Times, serif",
     },
   });
-  
 
   return (
     <>
@@ -124,7 +122,13 @@ function Home() {
                     </div>
                     <div className="text-box-body">
                       <FadeInSection>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span>Hello! Thanks for visiting.</span>
+                        <br></br>
+                        <br></br>
+                        <span>My name is Christine Bui and let me be the first to introduce you to CMB Realty & Mortgage. We are a full service real estate and mortgage brokerage firm where Buyers and Sellers are represented fairly, professionally and with attention to detail.</span>
+                        <br></br>
+                        <br></br>
+                        <span>This website is designed to be your complete Real Estate resource. It has been built to assist you with all your needs. Our agents are always available to offer you personal and one-on-one assistant throughout the whole process. Our goal is to provide you the best service possible, and to help you make the right choices in your real estate transactions.</span>
                       </FadeInSection>
                     </div>
                     <FadeInSection>
@@ -164,10 +168,29 @@ function Home() {
             </div>
             <div className='house'>
               <div className='img-box'>
-                <img src={milpitas}></img>
+                <FadeInSection>
+                  <ImageBoard></ImageBoard>
+                </FadeInSection>
               </div>
               <div className='img-d'>
-                <span>Hello</span>
+                <FadeInSection>
+                  <span>97 E Saint James St #47 </span>
+                  <br></br>
+                  <span>San Jose, CA 95112</span>
+                </FadeInSection>
+                <FadeInSection>
+                  <div className='mls-box'>
+                    <p>MLS#: <a href='https://www.mlslistings.com/property/ml81773572/97-e-saint-james-st-47-san-jose-ca-95112'>ML81773572</a> | SqFt: 1,203 | Bedrooms: 2 | Bathrooms: 2</p>
+                  </div>
+                </FadeInSection>
+                <div className='desc-b'>
+                  <FadeInSection>
+                    <p>Experience downtown living at its finest in this sleek end unit. Spacious rooms, recent remodeling, and easy access to the heart of the city and the Light Rail station. Thriving community, great neighbors, and exciting growth on the horizon. Your urban oasis awaits!</p>
+                  </FadeInSection>
+                </div>
+                <FadeInSection>
+                  <Button variant="outlined" sx={{ ':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/listings');}}>View More Listings</Button> 
+                </FadeInSection>
               </div>
             </div>
           </div>
@@ -175,7 +198,26 @@ function Home() {
         </Parallax>
 
         <Parallax strength={600}>
-          <div className='content'>Buyers | Sellers</div>
+          <div className='content'>
+            <div className='buysell'>
+              
+              <div className='buyer-behind'>
+              <div className='buyer-box'>
+                <div className='title-bs'>
+                  <span>Buyers</span>
+                </div>
+              </div>
+
+              </div>
+              <div className='buyer-behind'>
+                <div className='buyer-box'>
+                  <div className='title-bs'>
+                      <span>Sellers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </Parallax>
 
 
@@ -190,7 +232,7 @@ function Home() {
               <FadeInSection>
                 <p>Exploring real estate opportunities?</p>
                 <p>Whether you're considering selling, listing, mortgage options, or seeking general advice, we've got you covered.</p>
-                <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/about');}}>Click Here</Button> 
+                <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/contact');}}>Click Here</Button> 
               </FadeInSection>
             </div>
               <div className='behind-box'></div>
