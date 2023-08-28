@@ -1,0 +1,72 @@
+.subtitle-buyer h2{
+    font-size: 2.6em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content3 {
+    height: 50vh;
+    width: 100vw;
+    color: #FBFCD4;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+.title-list2 {
+    display: inline-block;
+    text-align: center;
+}
+
+.title-list2 h1 {
+    margin-top: 40%;
+    display: relative;
+    font-size: 5em;
+    text-align: center;
+}
+
+.buy-box {
+    width: 80vw;
+    height: 60vh;
+    align-items: center;
+    border-radius: 2px solid goldenrod;
+}
+.columns {
+    width: 70vw;
+    height: 50vh;
+    margin-top: 3%;
+}
+
+.columns h2 {
+    font-size: 3.5em;
+    margin-top: -10%;
+    margin-bottom: 1%; 
+
+}
+
+.columns p {
+    margin-bottom: 5%; 
+}
+
+.col-title p {
+    font-size: 2em;
+    color: rgb(177, 177, 177);
+}
+.col-container{
+    display: inline-block;
+}
+
+.col-item {
+    font-size: 2em;
+    width: 35vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    border-bottom: 2px solid goldenrod;
+}
+
+.col-item p {
+    margin-left: 20px;
+}

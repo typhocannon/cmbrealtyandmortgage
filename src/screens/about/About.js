@@ -1,44 +1,18 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import {MdKeyboardArrowDown} from "react-icons/md";
-import {PiLightbulb, PiPinwheel, PiCubeTransparent, PiPersonArmsSpread, PiShieldPlus, PiChartLineUp,PiMagnifyingGlass, PiPenNib, PiCompass, PiStarFour} from "react-icons/pi"
+import {PiLightbulb, PiPinwheel, PiCubeTransparent, PiPersonArmsSpread, PiShieldPlus, PiMagnifyingGlass, PiCompass, PiStarFour} from "react-icons/pi"
 import { TbHomeDollar, TbHome, TbCoins, TbExposure } from "react-icons/tb"
-import { Button, createTheme, ThemeProvider } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import FadeInSection from "../../components/fadeinsection/FadeInSection";
+import CustomButton from "../../components/custom_button/Custom_Button";
 
 import './About.css';
+
 import candy from '../../images/cottoncandy_sunset.jpg'
 
 const About = () => {
-    function FadeInSection(props) {
-        const [isVisible, setVisible] = React.useState(true);
-        const domRef = React.useRef();
-        React.useEffect(() => {
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible(entry.isIntersecting));
-          });
-          observer.observe(domRef.current);
-        }, []);
-        return (
-          <div
-            className={`${props.animationClassName} ${isVisible ? 'is-visible' : ''}`}
-            ref={domRef}
-          >
-            {props.children}
-          </div>
-        );
-      }
-
-      const theme = createTheme({
-        typography: {
-          fontFamily: "Cambria, Cochin, Georgia, 'Times New Roman', Times, serif",
-        },
-      });
-
-      const navigate = useNavigate();
 
     return (
-        <ThemeProvider theme={theme}>
         <div className="about-page">
             <Parallax strength={600}>
               <div className="page-2-color">
@@ -161,8 +135,6 @@ const About = () => {
                           </div>
                         </div>
                     </div>
-                      {/* <h1>What We Can Do</h1>
-                      <h1>Any Questions?</h1> */}
                 </div>
             </Parallax>
             <Parallax>
@@ -177,8 +149,8 @@ const About = () => {
                   <FadeInSection animationClassName="fade-in-section">
                       <TbHome size={100}/>
                       <h1>Property Listings</h1>
-                      <p>selling and buying houses.</p>
-                      <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/listings');}}>View Listings</Button>
+                      <p>selling houses</p>
+                      <CustomButton navigationLink="/sellers" title="Read More"></CustomButton>
                     </FadeInSection>
                     </div>
 
@@ -186,8 +158,8 @@ const About = () => {
                     <FadeInSection animationClassName="fade-in-section">
                       <TbHomeDollar size={100}/>
                       <h1>Property Buying</h1>
-                      <p>finance / refinancing</p>
-                      <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/about');}}>View Listings</Button>
+                      <p>buying houses</p>
+                      <CustomButton navigationLink="/buyers" title="Read More"></CustomButton>
                       </FadeInSection>
                     </div>
                     <div className="service-box">
@@ -195,7 +167,7 @@ const About = () => {
                       <TbCoins size={100}/>
                       <h1>Finance</h1>
                       <p>purchase loans</p>
-                      <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/about');}}>View Listings</Button>
+                      <CustomButton navigationLink="/mortgage" title="Read More"></CustomButton>
                       </FadeInSection>
                     </div>
                     <div className="service-box">
@@ -203,7 +175,7 @@ const About = () => {
                       <TbExposure size={100}/>
                       <h1>Refinance</h1>
                       <p>Providing various types of mortgage loans for purchasing or refinancing homes.</p>
-                      <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/about');}}>View Listings</Button>
+                      <CustomButton navigationLink="/mortgage" title="Read More"></CustomButton>
                       </FadeInSection>
                     </div>
                   </div>
@@ -214,13 +186,12 @@ const About = () => {
                 <div className="q-box">
                 <FadeInSection animationClassName="fade-in-section">
                     <h1>Any Questions?</h1>
-                    <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={() => {window.scrollTo(0, 0); return navigate('/contact');}}>Contact Us</Button>
+                    <CustomButton navigationLink="/contact" title="Contact Us"></CustomButton>
                 </FadeInSection>
                 </div>
               </div>
             </Parallax>
         </div>
-      </ThemeProvider>
     )
 }
 

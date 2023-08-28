@@ -17,6 +17,36 @@
   visibility: visible;
 }
 
+
+/* Comes From Above */
+.fade-in-section2 {
+  opacity: 0;
+  transform: translateY(-20vh);
+  visibility: hidden;
+  transition: opacity 0.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section2.is-visible {
+opacity: 1;
+transform: none;
+visibility: visible;
+}
+
+.fade-in-section3 {
+opacity: 0;
+transform: translateX(20vw);
+visibility: hidden;
+transition: opacity 0.2s ease-out, transform .4s ease-out;
+will-change: opacity, visibility;
+}
+.fade-in-section3.is-visible {
+opacity: 1;
+transform: none;
+visibility: visible;
+}
+
+
 body {
   overflow: overlay;
 }

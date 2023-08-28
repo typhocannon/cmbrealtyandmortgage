@@ -173,30 +173,46 @@ body {
 
 /* BUYER SELLER PAGE */
 .buysell {
-  /* padding: 20px; */
-  width: 95vw;
+  width: 100vw;
   height: 90vh;
   margin-top: 3%;
 }
 
 .buyer-box {
   position: relative;
-  width: 35vw;
-  height: 70vh;
+  width: 32vw;
+  height: 60vh;
   display: inline-block;
   border: 3px solid #FBFCD4;
   background-color: #151515;
-  margin: 4%;
+  /* margin: 5%; */
+  margin-right: 9%;
+  margin-top: 5%;
+  padding: 15%;
+}
+
+.buyer-box p{
+  font-size: 1.5em;
 }
 
 .buyer-behind {
   position: relative;
   display: inline-block;
   width: 35vw;
-  height: 70vh;
+  height: 50vh;
   background-color:rgb(134, 104, 28) ;
-  margin: 4%;
+  margin: 6%;
   z-index: 0;
+}
+
+.title-bs {
+  font-size: 4.5em;
+  margin-bottom: 10%;
+  border-bottom: 3px solid goldenrod;
+}
+
+.desc-bs {
+  margin-bottom: 2em;
 }
 
 /* CONTACT PAGE */

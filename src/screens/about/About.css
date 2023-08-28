@@ -21,7 +21,7 @@
     width:50%;
     height:60%;
     /* background:linear-gradient(to top, #2b261b, #9d873e); */
-    background: #221b12;
+    background-color: #222121;
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -177,32 +177,3 @@
         transform: translateY(-10px);
     }
 }
-
-/* Comes From Above */
-.fade-in-section2 {
-    opacity: 0;
-    transform: translateY(-20vh);
-    visibility: hidden;
-    transition: opacity 0.2s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
-}
-
-.fade-in-section2.is-visible {
-opacity: 1;
-transform: none;
-visibility: visible;
-}
-
-.fade-in-section3 {
-opacity: 0;
-transform: translateX(20vw);
-visibility: hidden;
-transition: opacity 0.2s ease-out, transform 3.2s ease-out;
-will-change: opacity, visibility;
-}
-.fade-in-section3.is-visible {
-opacity: 1;
-transform: none;
-visibility: visible;
-}
-
