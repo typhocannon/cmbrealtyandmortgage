@@ -1,0 +1,49 @@
+.footer-container {
+    position: relative;
+    bottom: 0;
+    height: 30%;
+    background-color: #151515;
+    padding-top: 2%;
+
+}
+
+.page-foot {
+    height: 20vh;
+    background-color: #151515;
+    color: #FBFCD4;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    padding-right: 50%;
+}
+
+.footer-text {
+    position:relative;
+    display: inline-block;
+    width: 30%;
+}
+
+.footer-text h1 {
+    display: block;
+    text-align: left;
+    font-size: 3;
+}
+
+.footer-text h2 {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.copyright {
+    position: relative;
+    margin-top: 2%;
+    color: rgb(177, 177, 177);
+
+}
+.copyright p{
+    font-size: 1em;
+}

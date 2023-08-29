@@ -81,7 +81,11 @@
     font-size: 65px;
     padding: 0px;
     margin: 0;
-    border-bottom: 2px solid #FBFCD4
+    border-bottom: 2px solid #FBFCD4;
+}
+
+.page-color {
+    background-color: #222121;
 }
 
 .container-row {

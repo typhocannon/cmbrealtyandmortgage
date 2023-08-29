@@ -70,3 +70,19 @@
 .col-item p {
     margin-left: 20px;
 }
+
+.bs-box-header h1 {
+    display: block;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.bs-box-desc li {
+    text-align: left;
+    font-size: 1.7em;
+    margin: 2%;
+}
+
+.bs-box-text p {
+    font-size: 1.4em;
+}

@@ -4,7 +4,7 @@ import { Parallax } from "react-parallax";
 import { BsBank, BsHouses, BsBuildings, BsCreditCard2Front } from "react-icons/bs";
 import "./Buyer.css"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
-
+import Footer from "../../components/footer/Footer";
 import sunset from "../../images/cottoncandy_sunset.jpg";
 
 const Buyer = () => {
@@ -71,6 +71,39 @@ const Buyer = () => {
             </div>
         </Parallax>
 
+        <Parallax>
+        <div className='list-page-color'>
+            <div className="content">
+            <div className='bs-box2'>
+              <div className='bs-img-box'>
+                  <img src='https://images.pexels.com/photos/8297652/pexels-photo-8297652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
+              </div>
+              <div className='bs-box-text'>
+                <div className='bs-box-header'>
+                  <FadeInSection animationClassName='fade-in-section'>
+                      <h1>We Will Represent You As A Buyer's Agent</h1>
+                    </FadeInSection>
+                </div>
+                <ul className='bs-box-desc'>
+                  <FadeInSection animationClassName='fade-in-section'>
+                    <li>Initial no-obligation consultation to establish your needs including: neighborhood, schools, style and size of home, amenities, price and financing</li>
+                    <li>Daily updates to you (via fax, e-mail or phone) with all properties new on the market fitting your criteria</li>
+                    <li>We can arrange financing at very competitive mortgage rates, with the program that fits your needs, with a local lender.</li>
+                    <li>Complete school report from National School Reporting System</li>
+                    <li>Town information from "Know Your Neighborhood"</li>
+                    <li>Negotiate the lowest price and best terms for your purchase</li>
+                    <li>Flexible Schedule</li>
+                  </FadeInSection>
+                </ul>
+                <FadeInSection animationClassName='fade-in-section'>
+                <p>Thinking of buying? Let us supply you with a complimentary school & town report. Just contact us!</p>
+                </FadeInSection>
+              </div>
+            </div>
+            </div>
+        </div>
+        </Parallax>
+        <Footer></Footer>
         </>
     )
 }

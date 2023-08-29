@@ -5,7 +5,7 @@ import {PiLightbulb, PiPinwheel, PiCubeTransparent, PiPersonArmsSpread, PiShield
 import { TbHomeDollar, TbHome, TbCoins, TbExposure } from "react-icons/tb"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import CustomButton from "../../components/custom_button/Custom_Button";
-
+import Footer from "../../components/footer/Footer";
 import './About.css';
 
 import candy from '../../images/cottoncandy_sunset.jpg'
@@ -34,6 +34,7 @@ const About = () => {
                 </div>
             </Parallax>
             <Parallax>
+              <div className="page-color">
                 <div className="content">
                     <div className="page-h1">
                       <FadeInSection animationClassName="fade-in-section">
@@ -136,6 +137,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+              </div>
             </Parallax>
             <Parallax>
               <div className="content">
@@ -191,6 +193,7 @@ const About = () => {
                 </div>
               </div>
             </Parallax>
+          <Footer></Footer>
         </div>
     )
 }

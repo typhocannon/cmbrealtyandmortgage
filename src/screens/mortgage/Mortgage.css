@@ -1,0 +1,43 @@
+.content4 {
+    height: 34vh;
+    width: 100vw;
+    color: #FBFCD4;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.mort-container {
+    padding: 5%;
+}
+
+.mort-title {
+    position: relative;
+    font-size: 2em;
+    border-bottom: 2px solid goldenrod;
+    width: 60%;
+}
+
+.mort-title h1 {
+    display: block;
+    text-align: left;
+}
+
+.mort-desc {
+    width: 60%;
+    height: 50%;
+    padding: 1%;
+}
+
+.mort-desc h2 {
+    font-size: 2.5em;
+    display: block;
+    text-align: left;
+}
+
+.mort-desc p {
+    font-size: 1.5em;
+    display: block;
+    text-align: left;
+    margin-top: 1%;
+}

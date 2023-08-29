@@ -12,6 +12,7 @@ import About from './screens/about/About';
 import Contact from './screens/contact/Contact';
 import Seller from './screens/seller/Seller';
 import Buyer from './screens/buyer/Buyer';
+import Mortgage from './screens/mortgage/Mortgage';
 function App() {
   
 
@@ -24,7 +25,7 @@ function App() {
         <Route path="/listings" element={<Listing />} />
         <Route path="/buyers" element={<Buyer/>} />
         <Route path="/sellers" element={<Seller />} />
-        <Route path="/mortgage" element={<Contact />} />
+        <Route path="/mortgage" element={<Mortgage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Ham_Button/>

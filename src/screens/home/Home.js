@@ -16,6 +16,7 @@ import Slider from '../../components/slider/Slider';
 import Ham_Button from '../../components/ham_button/Ham_Button';
 import FadeInSection from '../../components/fadeinsection/FadeInSection';
 import CustomButton from '../../components/custom_button/Custom_Button';
+import Footer from '../../components/footer/Footer';
 
 import MilpitasSunset from '../../images/milpitas-sunset.png';
 import Mother from '../../images/christine-placeholder.jpg';
@@ -92,9 +93,7 @@ function Home() {
                       <FadeInSection animationClassName='fade-in-section'>
                         <span>Hello! Thanks for visiting.</span>
                         <br></br>
-                        <br></br>
                         <span>My name is Christine Bui and let me be the first to introduce you to CMB Realty & Mortgage. We are a full service real estate and mortgage brokerage firm where Buyers and Sellers are represented fairly, professionally and with attention to detail.</span>
-                        <br></br>
                         <br></br>
                         <span>This website is designed to be your complete Real Estate resource. It has been built to assist you with all your needs. Our agents are always available to offer you personal and one-on-one assistant throughout the whole process. Our goal is to provide you the best service possible, and to help you make the right choices in your real estate transactions.</span>
                       </FadeInSection>
@@ -128,6 +127,7 @@ function Home() {
 
 
         <Parallax strength={600}>
+        <div className='list-page-color'>
           <div className='content'>
             <div className="page-title">
             <FadeInSection animationClassName='fade-in-section'>
@@ -162,48 +162,45 @@ function Home() {
               </div>
             </div>
           </div>
-
+        </div>
         </Parallax>
 
         <Parallax strength={600}>
           <div className='content'>
-            <div className='buysell'>
-              
-              <div className='buyer-behind'>
-                <div className='buyer-box'>
-                  <div className='title-bs'>
-                    <FadeInSection animationClassName='fade-in-section'>
+            <div className='bs-box'>
+              <div className='bs-img-box'>
+                  <img src='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
+              </div>
+              <div className='bs-box-text'>
+                <div className='bs-box-header'>
+                  <FadeInSection animationClassName='fade-in-section'>
                       <span>For Buyers</span>
                     </FadeInSection>
-                  </div>
-                  <div className='desc-bs'>
-                    <FadeInSection animationClassName='fade-in-section'>
-                      <p>At CMB Realty & Mortgage, we recognize that not only is buying a home one of the largest investments you will make in your life, but it is also one of the most stressful. We will take you through the whole buying process from the first preview of your dream home through close of escrow.</p>
-                    </FadeInSection>
-                  </div>
+                </div>
+                <div className='bs-box-desc'>
                   <FadeInSection animationClassName='fade-in-section'>
-                    <CustomButton navigationLink='/buyers' title='Read More'></CustomButton>
+                    <p>At CMB Realty & Mortgage, we recognize that not only is buying a home one of the largest investments you will make in your life, but it is also one of the most stressful. We will take you through the whole buying process from the first preview of your dream home through close of escrow.</p>
                   </FadeInSection>
+                    <CustomButton navigationLink='/buyers' title='Read More'></CustomButton>
                 </div>
               </div>
-
-              <div className='buyer-behind'>
-                <div className='buyer-box'>
-                  <div className='title-bs'>
-                    <FadeInSection animationClassName='fade-in-section'>
+            </div>
+            <div className='bs-box'>
+              <div className='bs-box-text'>
+                <div className='bs-box-header'>
+                  <FadeInSection animationClassName='fade-in-section'>
                       <span>For Sellers</span>
                     </FadeInSection>
-                  </div>
-                  <div className='desc-bs'>
+                </div>
+                <div className='bs-box-desc'>
                   <FadeInSection animationClassName='fade-in-section'>
                     <p>Selling your home is a big decision with its own unique challenges. At CMB Realty & Mortgage, we're here to simplify the process for you. Our experienced team will support you from assessing your property's value to closing the deal. Trust us to make your home selling journey smooth and stress-free.</p>
                   </FadeInSection>
-                  </div>
-                  <FadeInSection animationClassName='fade-in-section'>
-                    <CustomButton navigationLink='/sellers' title='Read More'></CustomButton>
-                  </FadeInSection>
                 </div>
-
+                    <CustomButton navigationLink='/sellers' title='Read More'></CustomButton>
+              </div>
+              <div className='bs-img-box'>
+                <img src='https://images.pexels.com/photos/7642000/pexels-photo-7642000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
               </div>
             </div>
           </div>
@@ -211,6 +208,7 @@ function Home() {
 
 
         <Parallax stength={600}>
+        <div className='contact-color'>
           <div className='content'>
             <div className='contact-pg'>
               <div className='contact-title'>
@@ -226,7 +224,9 @@ function Home() {
             </div>
               <div className='behind-box'></div>
           </div>
+        </div>
         </Parallax>
+        <Footer></Footer>
       </div>
     </>
   );

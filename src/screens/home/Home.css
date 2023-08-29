@@ -13,7 +13,6 @@ body {
 }
 
 /* MAIN PAGE OPENER */
-
 .texts-container {
   display: flex;
   align-items: center;
@@ -55,7 +54,7 @@ body {
 /* MEET THE ___ PAGE */
 
 .secondpage-bg {
-  /* background-color: #1B1C1E; */
+  background-color: #232222;
   display: flex;
 }
 
@@ -86,27 +85,30 @@ body {
 }
 
 .text-box {
-  display: flex;
-  justify-content: center; 
-  flex-direction: column;
-  align-items: center; 
   border-radius: 20px;
-  width: 800px;
+  width: 850px;
   height: 850px;
   font-size: 20px;
-  text-align: center;
   margin-left: 40px;
+  margin-left: 3%;
 }
 
 .header {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   font-size: 100px;
+  text-align: left;
 }
 
 .text-box-body {
   font-size: 30px;
   padding-bottom: 30px;
+}
+
+.text-box-body span{
+  text-align: left;
+  width: 100%;
+  display: block;
 }
 
 /* AGENT PAGE */
@@ -131,6 +133,9 @@ body {
 }
 
 /* LISTING PAGE */
+.list-page-color {
+  background-color: #232222;
+}
 .page-title {
   position: absolute;
   border-bottom: 3px solid #FBFCD4;
@@ -157,14 +162,19 @@ body {
   margin-left: 1em;
   width: 50vw;
   height: 40vh;
+  align-items: left;
 }
 
 .img-d span {
+  display: block;
   font-size: 4em;
+  text-align: left;
 }
 
 .img-d p {
+  display: block;
   font-size: 35px;
+  text-align: left;
 }
 
 .desc-b {
@@ -172,6 +182,43 @@ body {
 }
 
 /* BUYER SELLER PAGE */
+.bs-box {
+  width: 100%;
+  height: 40%;
+}
+
+.bs-img-box {
+  display: inline-block;
+  width: 30%;
+  height: 80%;
+  margin: 2%;
+}
+
+.bs-box-text {
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  margin: 5%;
+}
+
+.bs-box-header {
+  margin-bottom: 2%;
+  border-bottom: 3px solid goldenrod;
+}
+
+.bs-box-header span {
+  display: block;
+  text-align: left;
+  font-size: 4.5em;
+}
+
+
+.bs-box-desc p{
+  font-size: 1.5em;
+  display: block;
+  text-align: left;
+  margin-bottom: 2%;
+}
 .buysell {
   width: 100vw;
   height: 90vh;
@@ -216,6 +263,10 @@ body {
 }
 
 /* CONTACT PAGE */
+.contact-color {
+  background-color: #232222;
+}
+
 .contact-container {
   padding: 10%;
 }

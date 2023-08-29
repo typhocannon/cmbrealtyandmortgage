@@ -2,12 +2,11 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 
 import ImageBoard2 from "../../components/imageBoard2/imageBoard2";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import CustomButton from "../../components/custom_button/Custom_Button";
+import Footer from "../../components/footer/Footer";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -292,6 +291,7 @@ const Listing = () => {
                 </div>
             </div>
         </Parallax>
+        <Footer/>
         </>
     )
 }

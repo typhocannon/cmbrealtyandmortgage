@@ -1,25 +1,20 @@
 import React from "react";
 
 import { Parallax } from "react-parallax";
-import "./Seller.css"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
-
 import sunset from "../../images/cottoncandy_sunset.jpg";
-
 import Footer from "../../components/footer/Footer";
-const Seller = () => {
+
+import "./Mortgage.css"
+
+const Mortgage = () => {
     return (
         <>
         <Parallax strength='600' bgImage={sunset}>
-                <div className="content3">
+                <div className="content4">
                     <div className="title-list2">
                         <FadeInSection animationClassName="fade-in-section">
-                            <h1>For Our Sellers</h1>
-                        </FadeInSection>
-                    </div>
-                    <div className="subtitle-buyer">
-                        <FadeInSection animationClassName="fade-in-section">
-                            <h2>Benefit from our extensive experience where we act as your Seller's agent, committed to the successful sale of your property</h2>
+                            <h1>Mortgage</h1>
                         </FadeInSection>
                     </div>
                 </div>
@@ -28,27 +23,24 @@ const Seller = () => {
         <Parallax>
             <div className="list-page">
                 <div className="content">
-                    <div className="columns">
+                    <div className="mort-container">
                     <FadeInSection animationClassName="fade-in-section">
-                        <div className="col-title">
-                            <h2>Top 10 Reasons to List Your Home With Us</h2>
-                            <p>Highlighting our strengths in services for sellers:</p>
+                        <div className="mort-title">
+                            <h1>General Mortgage Information</h1>
                         </div>
                     </FadeInSection>
-                    <FadeInSection animationClassName="fade-in-section">
-                    <ul className="reasons-list">
-                        <li>We negotiate the best deals for our clients.</li>
-                        <li>We list the best homes for sale.</li>
-                        <li>We sell homes quicker.</li>
-                        <li>We sell homes for a higher percentage of the asking price.</li>
-                        <li>We have the biggest network of buyers looking for homes.</li>
-                        <li>We market properties more effectively, both on the web and off.</li>
-                        <li>We embrace new technologies like the Internet - that are proven to help buyers and sellers.</li>
-                        <li>We sell our homes as a team effort</li>
-                        <li>We utilize open houses to promote the sale of our homes.</li>
-                        <li>We offer our sellers specialists with specific real estate skills who are knowledgeable about the various processes.</li>
-                    </ul>
-                    </FadeInSection>
+                    
+                    <div className="mort-desc">
+                        <FadeInSection animationClassName="fade-in-section">
+                            <h2>Types of Mortgages</h2>
+                        </FadeInSection>
+                    
+                        <FadeInSection animationClassName="fade-in-section">
+                            <p>There are many types of mortgages you can choose from. Which type you choose usually depends on the length of time you think you'll be in your home or the other financial obligations you have. If you think you'll be there for the long haul, then you may want a fixed rate mortgage with the lowest interest rate you can get.
+There may be other considerations, however. What if you have kids who are going to be entering college in 10 years? In that case, you might consider getting an adjustable rate mortgage or a mortgage with a balloon payment so you can keep your payments low for the first few years in order to save for college. Once the kids are out of college, you can refinance at the current rate. If you don't think you'll be in your home for that long, then you may also want to look at other options.</p>
+                        </FadeInSection>
+
+                    </div>
                     </div>
                 </div>
             </div>
@@ -88,4 +80,4 @@ const Seller = () => {
     )
 }
 
-export default Seller;
+export default Mortgage;

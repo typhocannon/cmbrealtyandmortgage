@@ -1,0 +1,9 @@
+.reasons-list {
+    text-align: left;
+}
+
+.reasons-list li {
+    text-align: left;
+    font-size: 2em;
+    margin: 2%;
+}
