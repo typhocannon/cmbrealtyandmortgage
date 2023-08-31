@@ -8,14 +8,16 @@
 }
 
 .mort-container {
+    display: inline-block;
     padding: 5%;
+    width: 60%;
 }
 
 .mort-title {
     position: relative;
     font-size: 2em;
     border-bottom: 2px solid goldenrod;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .mort-title h1 {
@@ -24,7 +26,7 @@
 }
 
 .mort-desc {
-    width: 60%;
+    /* width: 60%; */
     height: 50%;
     padding: 1%;
 }
@@ -40,4 +42,9 @@
     display: block;
     text-align: left;
     margin-top: 1%;
+}
+
+.mort-img {
+    display: inline-block;
+    width: 40%;
 }
