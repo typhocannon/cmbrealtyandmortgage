@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
 import { Parallax } from "react-parallax";
-import { ThemeProvider, createTheme, TextField, Button, TextareaAutosize, Fade} from '@mui/material';
+import { ThemeProvider, createTheme, TextField, Button} from '@mui/material';
 
 import Footer from "../../components/footer/Footer";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
