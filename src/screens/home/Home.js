@@ -18,8 +18,8 @@ import FadeInSection from '../../components/fadeinsection/FadeInSection';
 import CustomButton from '../../components/custom_button/Custom_Button';
 import Footer from '../../components/footer/Footer';
 
-import MilpitasSunset from '../../images/milpitas-sunset.png';
-import Mother from '../../images/christine-placeholder.jpg';
+import oakland from '../../images/oakland.jpg';
+import Christine from '../../images/christine-placeholder.jpg';
 
 function Home() {
   const el = React.useRef(null);
@@ -41,7 +41,7 @@ function Home() {
     <>
       <div className="App">
         <Ham_Button/>
-      <Parallax strength={-300}  bgImage={MilpitasSunset} backgroundSize="contain">
+      <Parallax strength={-300}  bgImage={oakland} backgroundSize="contain">
           <div className="firstpage">
             <div className="content">
               <div className="text-container">
@@ -77,12 +77,27 @@ function Home() {
             <div className="content">
               <div className="secondpage-content">
 
-                <div className = "mum-img">
+              <div className='christine-box'>
+
+                <div className = "christine-img">
                   <div className="gold-box"></div>
                   <FadeInSection animationClassName='fade-in-section'>
-                    <img src={Mother} width="650" height="750"></img>
+                    <img src={Christine} width="650" height="750" alt='Christine Minh Bui'></img>
                   </FadeInSection>
-                  </div>
+                </div>
+                <FadeInSection animationClassName='fade-in-section'>
+
+                <div className="christine-title">
+                  <p>Christine Minh Bui</p>
+                  <p>Real Estate & Mortgage Broker</p>
+                  <p>BRE #: 01334386 | NMLS #: 256327</p>
+                </div>
+                </FadeInSection>
+
+
+              </div>
+
+
                   <div className="text-box">
                     <div className="header">
                       <FadeInSection animationClassName='fade-in-section'>
@@ -157,7 +172,7 @@ function Home() {
                   </FadeInSection>
                 </div>
                 <FadeInSection animationClassName='fade-in-section'>
-                  <CustomButton navigationLink='/listings' title='View More Listings'></CustomButton>
+                  <CustomButton navigationLink='listings' title='View More Listings'></CustomButton>
                 </FadeInSection>
               </div>
             </div>
@@ -169,7 +184,7 @@ function Home() {
           <div className='content'>
             <div className='bs-box'>
               <div className='bs-img-box'>
-                  <img src='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
+                  <img src='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='key-door' width='100%' height='100%'></img>
               </div>
               <div className='bs-box-text'>
                 <div className='bs-box-header'>
@@ -200,7 +215,7 @@ function Home() {
                     <CustomButton navigationLink='/sellers' title='Read More'></CustomButton>
               </div>
               <div className='bs-img-box'>
-                <img src='https://images.pexels.com/photos/7642000/pexels-photo-7642000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
+                <img src='https://images.pexels.com/photos/7642000/pexels-photo-7642000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="hand-key" width='100%' height='100%'></img>
               </div>
             </div>
           </div>
@@ -219,7 +234,7 @@ function Home() {
               <FadeInSection animationClassName='fade-in-section'>
                 <p>Exploring real estate opportunities?</p>
                 <p>Whether you're considering selling, listing, mortgage options, or seeking general advice, we've got you covered.</p>
-                <CustomButton navigationLink='contact' title='Click Here'></CustomButton>
+                <CustomButton navigationLink='/contact' title='Click Here'></CustomButton>
               </FadeInSection>
             </div>
               <div className='behind-box'></div>

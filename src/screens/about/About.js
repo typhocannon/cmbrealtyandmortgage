@@ -151,7 +151,7 @@ const About = () => {
                   <FadeInSection animationClassName="fade-in-section">
                       <TbHome size={100}/>
                       <h1>Property Listings</h1>
-                      <p>selling houses</p>
+                      <p>We provide professional services to facilitate the listing of your property, ensuring a seamless and efficient selling process.</p>
                       <CustomButton navigationLink="/sellers" title="Read More"></CustomButton>
                     </FadeInSection>
                     </div>
@@ -160,7 +160,7 @@ const About = () => {
                     <FadeInSection animationClassName="fade-in-section">
                       <TbHomeDollar size={100}/>
                       <h1>Property Buying</h1>
-                      <p>buying houses</p>
+                      <p>We offer a diverse range of homes for sale, helping you find your perfect property.</p>
                       <CustomButton navigationLink="/buyers" title="Read More"></CustomButton>
                       </FadeInSection>
                     </div>
@@ -168,7 +168,7 @@ const About = () => {
                     <FadeInSection animationClassName="fade-in-section">
                       <TbCoins size={100}/>
                       <h1>Finance</h1>
-                      <p>purchase loans</p>
+                      <p>We offer a wide variety of loan programs to meet your specific needs. </p>
                       <CustomButton navigationLink="/mortgage" title="Read More"></CustomButton>
                       </FadeInSection>
                     </div>

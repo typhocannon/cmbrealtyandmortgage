@@ -1,16 +1,35 @@
-import React from "react";
-
+import React, {useState} from "react";
+import { Button, createTheme, ThemeProvider } from "@mui/material";
 import { Parallax } from "react-parallax";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import sunset from "../../images/cottoncandy_sunset.jpg";
+import mtsummit from "../../images/GOPR0260.jpg";
 import Footer from "../../components/footer/Footer";
 
 import "./Mortgage.css"
 
 const Mortgage = () => {
+    const theme = createTheme({
+        typography: {
+          fontFamily: "Cambria, Cochin, Georgia, 'Times New Roman', Times, serif",
+        },
+      });
+
+    // State variables for input values and calculated result
+    const [loanAmount, setLoanAmount] = useState(2000);
+    const [nMonths, setNMonths] = useState(2000);
+    const [monthlyInterest, setMonthlyInterest] = useState(0.01); // Initial monthly interest rate
+    const [monthlyPayment, setMonthlyPayment] = useState(0);
+    
+    const calculateMonthly = () => {
+        const helper = Math.pow(1 + monthlyInterest, nMonths);
+        const payment = loanAmount * ((monthlyInterest * helper) / (helper - 1));
+        setMonthlyPayment(payment.toFixed(2)); // Round to two decimal places
+    };
+
     return (
         <>
-        <Parallax strength='600' bgImage={sunset}>
+        <Parallax strength='600' bgImage={mtsummit}>
                 <div className="content4">
                     <div className="title-list2">
                         <FadeInSection animationClassName="fade-in-section">
@@ -56,7 +75,71 @@ const Mortgage = () => {
         <Parallax>
         <div className='list-page-color'>
             <div className="content">
+                <FadeInSection animationClassName="fade-in-section">
+                    <div className="mort-title">
+                        <h1>Monthly Mortgage Calculator & Resources</h1>
+                    </div>
+                </FadeInSection>
+                <div className="calc-row">
+                    <div className="calculator">
+                        <div className="top">
+                            <h2>Monthly Mortgage Calculator</h2>
+                        <form action="#">
+                        <div className="group">
+                            <div className="calc-title">Loan Amount</div>
+                            <input
+                                type="number"
+                                value={loanAmount}
+                                className="loan-amount"
+                                onChange={(e) => setLoanAmount(e.target.value)}
+                            />
+                        </div>
 
+                        <div className="group">
+                            <div className="calc-title">Months</div>
+                            <input
+                                type="number"
+                                value={nMonths}
+                                className="months-amt"
+                                onChange={(e) => setNMonths(e.target.value)}
+                            />
+                        </div>
+
+                        <div className="group">
+                            <div className="calc-title">Monthly Interest Rate</div>
+                            <input
+                                type="number"
+                                value={monthlyInterest}
+                                className="interest-rate"
+                                onChange={(e) => setMonthlyInterest(e.target.value)}
+                            />
+                        </div>
+                        </form>
+                        </div>
+
+                        <div className="result">
+                            <div className="calculated-rate">
+                                <h2>Your Monthly Payment</h2>
+                                <div className="value">{monthlyPayment}</div>
+                            </div>
+                            <ThemeProvider theme={theme}>
+                                <Button variant="outlined" sx={{':hover': { bgcolor:  'rgb(194, 161, 63)', color:'white',},}} color="inherit" size="large" onClick={calculateMonthly}>Calculate</Button> 
+                            </ThemeProvider>
+                        </div>
+                    </div>
+
+                    <div className="resources">
+                        <div className="resource-container">
+                            <h1>Other Resources:</h1>
+                            <ul>
+                                <li><a href="https://www.bankrate.com/mortgages/mortgage-calculator/">Indepth Mortgage Calculator</a></li>
+                                <li><a href="https://www.bankrate.com/mortgages/mortgage-rates/#mortgage-industry-insights">Mortgage Rates</a></li>
+                                <li><a href="https://www.bankrate.com/mortgages/refinance-rates/">Refiance Rates</a></li>
+                                <li><a href="https://www.bankrate.com/real-estate/new-house-calculator/">Home Affordability Calculator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         </Parallax>

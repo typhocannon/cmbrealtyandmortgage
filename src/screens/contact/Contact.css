@@ -5,57 +5,118 @@
     display: flex;
   }
   
-  .contact-texts {
-    flex: 1;
-    width: 40%;
-    margin-right: 10%;
-  }
-  
-  .contact-title h1 {
-    font-size: 3em;
-    border-bottom: 1px solid goldenrod;
-    display: block;
-    text-align: left;
-  }
-  
-  .contact-desc p {
-    font-size: 2em;
-    display: block;
-    text-align: left;
-    margin-top: 2%;
-  }
-  
-  .contact-info {
-    margin-top: 20%;
-  }
-  
-  .contact-boxes {
-    flex: 1;
-    width: 60em;
-    height: 85%;
-    border: 2px solid #FBFCD4;
-  }
+.contact-texts {
+  flex: 1;
+  width: 40%;
+  margin-right: 10%;
+}
 
-  .contact-inputs {
-    position: relative;
-    width: 100px;
-    margin: 0;
-    padding: 0;
-  }
+.contact-title h1 {
+  font-size: 3em;
+  border-bottom: 1px solid goldenrod;
+  display: block;
+  text-align: left;
+}
 
-  .contact-input {
-    margin: 0;
-    padding: 0;
-  }
+.contact-desc p {
+  font-size: 2em;
+  display: block;
+  text-align: left;
+  margin-top: 2%;
+}
 
-  .contact-boxes h2 {
-    font-size: 2em;
-    display: block;
-    text-align: left;
-    margin: 5%;
-  }
+.contact-info {
+  margin-top: 20%;
+}
 
-  .contact-name {
-    display: inline-flex;
-  }
-  
+.contact-boxes {
+  background-color: #232222;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex: 1;
+  width: 60em;
+  height: 85%;
+  border: 2px solid #FBFCD4;
+}
+
+.contact-inputs {
+  position: relative;
+  width: 80%;
+  margin-left: 5%;
+  padding: 0;
+}
+
+.contact-input {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-boxes h2 {
+  font-size: 2em;
+  display: block;
+  text-align: left;
+  margin: 5%;
+}
+
+.contact-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.space-between {
+  width: 10%;
+}
+
+.Button-position {
+  margin-top: 5%;
+}
+.MuiInputLabel-root {
+  color: goldenrod !important;
+}
+
+.contact-page-color {
+  color: #FBFCD4;
+  background-color: #232222;
+}
+
+.contact-agents-title {
+  margin: 5%;
+  width: 60%;
+
+}
+.contact-agents-title h1{
+  border-bottom: 2px solid goldenrod;
+  font-size: 4em;
+  display: block;
+  text-align: left;
+}
+
+
+
+.agent-box {
+  display: inline-block;
+  border: 2px solid goldenrod;
+  padding: 2%;
+  margin: 1%;
+  width: 50%;
+}
+
+.agent-img {
+  display: inline-flex;
+  width: 100%;
+}
+
+.agent-texts {
+  margin: 2%;
+  width: 100%;
+}
+.agent-texts h2 {
+  font-size: 2em;
+  text-align: left;
+}
+
+.agent-texts p {
+  display: block;
+  font-size: 1.5em;
+  text-align: left;
+}

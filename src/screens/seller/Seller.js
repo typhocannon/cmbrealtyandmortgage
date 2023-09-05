@@ -4,13 +4,14 @@ import { Parallax } from "react-parallax";
 import "./Seller.css"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 
-import sunset from "../../images/cottoncandy_sunset.jpg";
+import mtsummit from "../../images/GOPR0260.jpg";
+
 
 import Footer from "../../components/footer/Footer";
 const Seller = () => {
     return (
         <>
-        <Parallax strength='600' bgImage={sunset}>
+        <Parallax strength='600' bgImage={mtsummit}>
                 <div className="content3">
                     <div className="title-list2">
                         <FadeInSection animationClassName="fade-in-section">

@@ -65,12 +65,14 @@ body {
   /* background-color: #1B1C1E; */
 }
 
-.mum-img {
+.christine-img {
   margin-right: 40px;
 }
 
-.mum-z {
-  z-index: 1000;
+.christine-title {
+  z-index: 1;
+  align-items: center;
+  margin-left: 10%;
 }
 .gold-box {
   position: absolute;

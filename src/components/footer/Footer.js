@@ -1,11 +1,12 @@
 import React from "react";
 import "./Footer.css"
+import MasterLogo from "../../images/Masterlogo1-modified.png"
 const Footer = () => {
     return (
         <div className="page-foot">
             <div className="footer-container">
                 <div className="logo">
-                    <img src="https://www.cmbrealtymortgage.com/images/Masterlogo1.jpg"></img>
+                    <img src={MasterLogo} alt="Logo"></img>
                 </div>
 
                 <div className="footer-text">
@@ -13,6 +14,7 @@ const Footer = () => {
                     <h2>892 Horcajo Street, Milpitas, CA 95035</h2>
                     <h2>Phone: (408) 416-3963  |  Fax: (888) 258-9029</h2>
                     <h2>Email: cbui@comcast.net</h2>
+                    <h2>BRE #: 01934309 | NMLS #: 1079239</h2>
                 </div>
 
             <div className="copyright">

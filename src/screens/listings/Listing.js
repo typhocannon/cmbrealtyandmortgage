@@ -39,6 +39,7 @@ import house6_k from '../../images/houses/house6/kitchenh6.png';
 import house6_b from '../../images/houses/house6/backh6.png';
 
 import map from '../../images/googlemaps.png';
+
 const Listing = () => {
     
     const house1_imgs = [

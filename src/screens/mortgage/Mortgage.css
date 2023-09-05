@@ -48,3 +48,101 @@
     display: inline-block;
     width: 40%;
 }
+
+.calc-row {
+    width: 100%;
+}
+
+.calculator {
+    display: inline-block;
+    width: 40%;
+    height: 60%;
+    background-color: #151515;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10%;
+    border-radius: 10px;
+}
+
+.calculator .top {
+  background-color: rgb(134, 104, 28);
+  color: #151515;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10%;
+}
+
+.calculator,
+.calculator * {
+    box-sizing: border-box;
+}
+
+.calculator .top h2{
+    font-size: 2em;
+    display: block;
+    text-align: left;
+    margin-top: 0;
+}
+
+.calculator form {
+    margin-top: 2%;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.calculator form input {
+    padding: 2%;
+    width: 100%;
+}
+.calc-title {
+    display: block;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.result {
+    padding: 5%;
+}
+
+.calculator .result .value {
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.calculator .result .value::before {
+    content: "$"
+}
+
+.calculated-rate {
+    padding: 5%;
+}
+
+.calculated-rate h2 {
+    font-size: 2em;
+}
+
+.calculated-rate .value {
+    font-size: 2em;
+}
+
+.resources {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10%;
+}
+
+.resources h1 {
+    font-size: 2em;
+    display: block;
+    text-align: left;
+}
+.resources ul {
+    font-size: 1.5em;
+    display: block;
+    text-align: left;
+}
+
+.resources li {
+    text-align: left;
+    margin: 2%;
+}

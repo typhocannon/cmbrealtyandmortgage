@@ -6,11 +6,13 @@ import "./Buyer.css"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import Footer from "../../components/footer/Footer";
 import sunset from "../../images/cottoncandy_sunset.jpg";
+import mtsummit from "../../images/GOPR0260.jpg";
+
 
 const Buyer = () => {
     return (
         <>
-        <Parallax strength='600' bgImage={sunset}>
+        <Parallax strength='600' bgImage={mtsummit}>
                 <div className="content3">
                     <div className="title-list2">
                         <FadeInSection animationClassName="fade-in-section">
