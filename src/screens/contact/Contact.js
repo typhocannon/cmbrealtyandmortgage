@@ -26,7 +26,7 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('cmb_gmail', 'template_17bz3jm', form.current, 'gOHpJHGH2n6Z1wBw1')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -40,9 +40,9 @@ const Contact = () => {
         },
         palette: {
             primary: {
-                main: "rgb(134, 104, 28)", //this overide blue color
-                light: "rgb(134, 104, 28)", //overides light blue
-                dark: "rgb(134, 104, 28)", //overides dark blue color
+                main: "rgb(134, 104, 28)", 
+                light: "rgb(134, 104, 28)",
+                dark: "rgb(134, 104, 28)", 
             },
         },
       });
@@ -309,7 +309,7 @@ const Contact = () => {
                         <FadeInSection animationClassName="fade-in-section">
                         <div className="agent-box">
                             <div className="agent-img">
-                                <img src={Blank} alt="blank" width="200px" height="260.76"></img>
+                                <img src={Annabelle} alt="Annabelle" width="200px" height="260.76"></img>
                                 <div className="agent-texts">
                                     <h2>Annabelle Vo Golden</h2>
                                     <p>Realtor & Mortgage Loan Originatore</p>
