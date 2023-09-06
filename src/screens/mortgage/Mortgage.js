@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Button, createTheme, ThemeProvider } from "@mui/material";
 import { Parallax } from "react-parallax";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
-import sunset from "../../images/cottoncandy_sunset.jpg";
 import mtsummit from "../../images/GOPR0260.jpg";
 import Footer from "../../components/footer/Footer";
 
@@ -16,15 +15,35 @@ const Mortgage = () => {
       });
 
     // State variables for input values and calculated result
-    const [loanAmount, setLoanAmount] = useState(2000);
-    const [nMonths, setNMonths] = useState(2000);
+    const [loanAmount, setLoanAmount] = useState(200000);
+    const [annualInterest, setAnnualInterest] = useState(0.01);
+    const [nMonths, setNMonths] = useState(360);
     const [monthlyInterest, setMonthlyInterest] = useState(0.01); // Initial monthly interest rate
     const [monthlyPayment, setMonthlyPayment] = useState(0);
     
+    useEffect(() => {
+        console.log("annualInterest : ", annualInterest);
+    
+        const calcMonthly = annualInterest / 12;
+        setMonthlyInterest(calcMonthly / 100);
+      }, [annualInterest]);
+
+    const handleAnnualInterestChange = (e) => {
+        const newAnnualInterest = parseFloat(e.target.value);
+        console.log("New Annual Interest Rate:", newAnnualInterest);
+        setAnnualInterest(newAnnualInterest);
+    };
+
     const calculateMonthly = () => {
         const helper = Math.pow(1 + monthlyInterest, nMonths);
         const payment = loanAmount * ((monthlyInterest * helper) / (helper - 1));
-        setMonthlyPayment(payment.toFixed(2)); // Round to two decimal places
+        console.log("monthlyInterest: ", monthlyInterest);
+        console.log("nMonths: ", nMonths);
+        console.log("loanAmount: ", loanAmount);
+        console.log("helper: ", helper);
+        console.log("Payment: ", payment);
+        console.log("Monthly Payment: ", monthlyPayment);
+        setMonthlyPayment(payment.toFixed(2));
     };
 
     return (
@@ -91,7 +110,10 @@ const Mortgage = () => {
                                 type="number"
                                 value={loanAmount}
                                 className="loan-amount"
-                                onChange={(e) => setLoanAmount(e.target.value)}
+                                onChange={(e) => {
+                                    setLoanAmount(e.target.value);
+                                    console.log("Set Loan Amount: ", e.target.value);
+                                }}
                             />
                         </div>
 
@@ -101,17 +123,20 @@ const Mortgage = () => {
                                 type="number"
                                 value={nMonths}
                                 className="months-amt"
-                                onChange={(e) => setNMonths(e.target.value)}
+                                onChange={(e) => {
+                                    setNMonths(e.target.value);
+                                    console.log("New months: ", e.target.value);
+                                }}
                             />
                         </div>
 
                         <div className="group">
-                            <div className="calc-title">Monthly Interest Rate</div>
+                            <div className="calc-title">Annual Interest Rate</div>
                             <input
                                 type="number"
-                                value={monthlyInterest}
+                                value={annualInterest}
                                 className="interest-rate"
-                                onChange={(e) => setMonthlyInterest(e.target.value)}
+                                onChange={handleAnnualInterestChange}
                             />
                         </div>
                         </form>
