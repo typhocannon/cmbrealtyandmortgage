@@ -32,6 +32,8 @@ const Contact = () => {
           }, (error) => {
               console.log(error.text);
           });
+        
+        alert("Email Sent!");
       };
     
       const theme = createTheme({
