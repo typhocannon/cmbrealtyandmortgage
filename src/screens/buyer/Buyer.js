@@ -3,6 +3,7 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import { BsBank, BsHouses, BsBuildings, BsCreditCard2Front } from "react-icons/bs";
 import "./Buyer.css"
+import BuyerItem from "../../components/buyer-item/Buyer-item";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import Footer from "../../components/footer/Footer";
 import sunset from "../../images/cottoncandy_sunset.jpg";
@@ -39,34 +40,13 @@ const Buyer = () => {
                         
                     </FadeInSection>
                         <div className="col-container">
-                            <FadeInSection animationClassName="fade-in-section">
-                                <div className="col-item">
-                                    <BsHouses size="142" color="goldenrod"></BsHouses>
-                                    <p>Residential and Commercial</p>
-                                </div>
-                            </FadeInSection>    
-
-                            <FadeInSection animationClassName="fade-in-section">
-                                <div className="col-item">
-                                    <BsBuildings size="142" color="goldenrod"></BsBuildings>
-                                    <p>New Construction and Land Sales</p>
-                                </div>
-                            </FadeInSection>    
+                            <BuyerItem materialUIAsset={<BsHouses size="142" color="goldenrod"></BsHouses>} description="Residential and Commercial"/>   
+                            <BuyerItem materialUIAsset={<BsBuildings size="142" color="goldenrod"></BsBuildings>} description="New Construction and Land Sales"/>
                         </div>
 
                         <div className="col-container">
-                            <FadeInSection animationClassName="fade-in-section">
-                            <div className="col-item">
-                                <BsBank size="142" color="goldenrod"></BsBank>
-                                <p>Bank-Owned Properties / Estate Sales</p>
-                            </div>
-                            </FadeInSection>    
-                            <FadeInSection animationClassName="fade-in-section">
-                            <div className="col-item">    
-                                <BsCreditCard2Front size="142" color="goldenrod"></BsCreditCard2Front>
-                                <p>Finance and Re-finance</p>
-                            </div>
-                            </FadeInSection>    
+                            <BuyerItem materialUIAsset={<BsBank size="142" color="goldenrod"></BsBank>} description="Bank-Owned Properties / Estate Sales"/>   
+                            <BuyerItem materialUIAsset={<BsCreditCard2Front size="142" color="goldenrod"></BsCreditCard2Front>} description="Residential and Commercial"/>   
                         </div>
                     </div>
                 </div>

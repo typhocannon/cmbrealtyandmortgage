@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation'
 
 import "./Slider.css"
+import SliderItem from '../SliderItem/SliderItem';
 
 import Christine from "../../images/christine-placeholder.jpg";
 import Dan from "../../images/agents/DanTran1.jpg";
@@ -24,25 +25,31 @@ import Janet from "../../images/agents/janet.jpg";
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const Slider = () => {
-    function FadeInSection(props) {
-        const [isVisible, setVisible] = React.useState(true);
-        const domRef = React.useRef();
-        React.useEffect(() => {
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible(entry.isIntersecting));
-          });
-          observer.observe(domRef.current);
-          // return () => observer.unobserve(domRef.current);
-        }, []);
-        return (
-          <div
-            className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-            ref={domRef}
-          >
-            {props.children}
-          </div>
-        );
-      }
+  const DATA = [
+    {name:"Christine Bui", imgSrc:Christine, title:"Real Estate Agent / Mortgage Broker", mortId:"BRE #: 01334386 | NMLS #: 256327", contact:"Cell: (510) 674-5708"},
+    {name:"Dan Tran", imgSrc:Dan, title:"Operation Manager / Real Estate Agent", mortId:"BRE #: 01901911", contact:"Cell: (408) 560-6695"},
+    {name:"Diana Tran", imgSrc:Diana, title:"Broker Associate", mortId:"BRE #: 01332809 | NMLS #: 338600", contact:"Cell: (510) 827-7872"},
+    {name:"Michael Yoshihara", imgSrc:Michael, title:"Sr. Realtor", mortId:"BRE #:01396017", contact:"Cell: (408) 712-9259"},
+    {name:"Catherina Wong", imgSrc:Catherina, title:"Realtor", mortId:"BRE #:01933002", contact:"Cell: (916) 337-0591"},
+    {name: "Tuong Bui", imgSrc:Tuong, title:"Realtor", mortId: "BRE #:00926516", contact:"Cell: (408) 425-2619"},
+    {name: "Annabelle Golden", imgSrc:Annabelle, title:"Realtor / Mortgage Loan Originator", mortId:"BRE #: 02051093 | NMLS #: 968010", contact:"Cell: (408) 334-8388"},
+    {name: "Janet Tran", imgSrc:Janet, title:"Sr. Realtor / Mortgage Loan Originator", mortId: "BRE #: 01503182 | NMLS #: 633079", contact:"(408) 858-8718"},
+    {name:"Angela Nguyen", imgSrc:Blank, title:"Broker Associate", mortId:"BRE #: 01396020 | NMLS #: 333918", contact:"Cell: (916) 833-0321"},
+  ]
+
+  const agentList = DATA.map((agent) => (
+    <SwiperSlide key={agent.name}>
+      <SliderItem
+        name={agent.name}
+        imgSrc={agent.imgSrc}
+        title={agent.title}
+        mortId={agent.mortId}
+        contact={agent.contact}
+        key={agent.name}
+      />
+    </SwiperSlide>
+  ));
+
   return (
     <>
       <Swiper
@@ -64,106 +71,7 @@ const Slider = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
         >
-        <SwiperSlide>
-            <FadeInSection>
-                <div className="span-head">Christine Bui</div>
-            </FadeInSection>
-            <FadeInSection>
-                <img src={Christine} alt="Christine Minh Bui"/>
-            </FadeInSection>
-                <span>Real Estate Agent / Mortgage Broker</span>
-                <span>BRE #: 01334386 | NMLS #: 256327</span>
-                <span>Cell: (510) 673-5708</span>
-        </SwiperSlide>
-        <SwiperSlide>
-            <FadeInSection>
-                <div className="span-head">Dan Tran</div>
-            </FadeInSection>
-            <FadeInSection>
-                <img src={Dan} alt="Dan H. Tran"/>
-            </FadeInSection>
-                <span>Operation Manager / Real Estate Agent</span>
-                <span>BRE #: 01901911</span>
-                <span>Cell: (408) 560-6695</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-          <div className="span-head">Diana Tran</div>
-          </FadeInSection>
-          <FadeInSection>
-          <img src={Diana} alt="Diana Thanh Thuy Tran"/>
-          </FadeInSection>
-          <span>Broker Associate</span>
-          <span>BRE #: 01332809 | NMLS #: 338600</span>
-          <span>Cell: (510) 827-7872</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-          <div className="span-head">Michael Yoshihara</div>
-          </FadeInSection>
-        <FadeInSection>
-          <img src={Michael} alt="Michael Manabu Yoshihara"/>
-        </FadeInSection>
-          <span>Sr. Realtor</span>
-          <span>BRE #:01396017</span>
-          <span>Cell: (408) 712-9259</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-          <div className="span-head">Catherina Wong</div>
-          </FadeInSection>
-          <FadeInSection>
-          <img src={Catherina} alt="Catherina Wong"/>
-          </FadeInSection>
-          <span>Realtor</span>
-          <span>BRE #:01933002</span>
-          <span>Cell: (916) 337-0591</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-              <div className="span-head">Tuong Bui</div>
-          </FadeInSection>
-          <FadeInSection>
-              <img src={Tuong} alt="Tuong Bui"/>
-          </FadeInSection>
-          
-          <span>Realtor</span>
-          <span>BRE #:00926516</span>
-          <span>Cell: (408) 425-2619</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-              <div className="span-head">Annabelle Golden</div>
-          </FadeInSection>
-          <FadeInSection>
-              <img src={Annabelle} alt="Annabelle Golden"/>
-          </FadeInSection>
-          <span>Realtor / Mortgage Loan Originator</span>
-          <span>BRE #: 02051093 | NMLS #: 968010</span>
-          <span>Cell: (408) 334-8388  </span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-            <div className="span-head">Janet Tran</div>
-          </FadeInSection>
-          <FadeInSection>
-            <img src={Janet} alt="Janet Tran"/>
-          </FadeInSection>
-          <span>Sr. Realtor / Mortgage Loan Originator</span>
-          <span>BRE #: 01503182 | NMLS #: 633079</span>
-          <span>(408) 858-8718</span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <FadeInSection>
-            <div className="span-head">Angela Nguyen</div>
-          </FadeInSection>
-          <FadeInSection>
-            <img src={Blank} alt="Angela"/>
-          </FadeInSection>
-          <span>Broker Associate</span>
-          <span>BRE #: 01396020 | NMLS #: 333918</span>
-          <span>Cell: (916) 833-0321</span>
-        </SwiperSlide>
+          {agentList}
       </Swiper>
     </>
   );

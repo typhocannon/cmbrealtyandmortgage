@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
 
 import './Ham_Button.css';
 
-const Ham_Button = () => {
+const HamButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -61,4 +60,4 @@ const Ham_Button = () => {
   );
 };
 
-export default Ham_Button;
+export default HamButton;

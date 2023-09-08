@@ -7,7 +7,7 @@ import ImageBoard2 from "../../components/imageBoard2/imageBoard2";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import CustomButton from "../../components/custom_button/Custom_Button";
 import Footer from "../../components/footer/Footer";
-
+import ListingItem from "../../components/listingItem/ListingItem";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -73,6 +73,32 @@ const Listing = () => {
         {src: house6_b}
     ]
 
+    const houses = [
+        {imgs: house1_imgs, name: "2338 Shade Tree Lane, San Jose, CA 95131", price: "$1,148,000", MLSlink: 'https://www.mlslistings.com/property/ml81773783/2338-shade-tree-ln-san-jose-ca-95131', MLSnum: "ML81773783", status: "Sale Pending", size: "1,769", bed: "4", bath: "2", year: "1974"},
+        {imgs: house2_imgs, name: "4374 Ribera St., Fremont, CA 94536", price: "$959,999", MLSlink: 'https://www.mlslistings.com/Property/ML81771188/4374-ribera-st-fremont-ca-94536', MLSnum: "ML81773783", status: "Sale Pending", size: "1,256", bed: "3", bath: "2", year:"1967"},
+        {imgs: house3_imgs, name: "1919 Perrone Cir, San Jose, CA 95116", price: "$725,000", MLSlink: 'n/a', MLSnum: 'ML81738746', status: 'Sold', size: '1,306', bed: '3', bath: '2', year: '1982'},
+        {imgs: house4_imgs, name: "480 Dempsey Rd #182, Milpitas, CA 95035", price: "$420,000", MLSlink: 'n/a', MLSnum: 'ML81717062', status: 'Sold', size: '676', bed: '1', bath: '1', year: '2007'},
+        {imgs: house5_imgs, name: "4619 Capay Dr #1, San Jose, CA 95118", price: "$460,000", MLSlink: 'n/a', MLSnum: 'ML81759095', status: 'Sold', size: '810', bed: '2', bath: '1', year:'1970' },
+        {imgs: house6_imgs, name: "97 Alexander Ct, San Jose, CA 95116", price: "$725,000", MLSlink: 'n/a', MLSnum: 'ML81748847', status: 'Sold', size: '1,240', bed: '3', bath: '1', year: '1946'},
+         
+    ]
+
+    const houseList = houses.map((house) => (
+        <SwiperSlide key={house.name}>
+          <ListingItem
+            name={house.name}
+            imgs={house.imgs}
+            MLSlink={house.MLSlink}
+            MLSnum={house.MLSnum}
+            status={house.status}
+            size={house.size}
+            bed={house.bed}
+            bath={house.bath}
+            year={house.year}
+            key={house.name}
+          />
+        </SwiperSlide>
+      ));
     return (
         <>
         <Parallax>
@@ -94,188 +120,7 @@ const Listing = () => {
                     pagination={true}
                     className="listingSwiper"
                     >
-                    <SwiperSlide>
-                        <div className="list-img">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <ImageBoard2 images={house1_imgs}/>
-                            </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                            <FadeInSection animationClassName="fade-in-section2">
-                            <h1>2338 Shade Tree Lane, San Jose, CA 95131</h1>
-                            <h1>$1,148,000</h1>
-                            </FadeInSection>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #:<a href='https://www.mlslistings.com/property/ml81773783/2338-shade-tree-ln-san-jose-ca-95131'>ML81773783</a></p>
-                                <p>Sq Ft: 1,769</p>
-                                <p>Status: <em>Sale Pending</em> </p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 4</p>
-                                <p>Bathroom: 2</p>
-                                <p>Year Built: 1974</p>
-                            </FadeInSection>
-                            </div>
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <h2>Listed by CMB Realty & Mortgage</h2>
-                            </FadeInSection>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list-img">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <ImageBoard2 images={house2_imgs}/>
-                        </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h1>4374 Ribera St., Fremont, CA 94536</h1>
-                            <h1>$959,999</h1>
-                        </FadeInSection>
-                            <div className="list-desc-row">                        
-                        <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #:<a href='https://www.mlslistings.com/Property/ML81771188/4374-ribera-st-fremont-ca-94536'>ML81773783</a></p>
-                                <p>Sq Ft: 1,256</p>
-                                <p>Status: <em>Sale Pending</em> </p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 3</p>
-                                <p>Bathroom: 2</p>
-                                <p>Year Built: 1967</p>
-                            </FadeInSection>
-                            </div>
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h2>Listed by CMB Realty & Mortgage</h2>
-                        </FadeInSection>
-                        
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list-img">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <ImageBoard2 images={house3_imgs}/>
-                        </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h1>1919 Perrone Cir, San Jose, CA 95116</h1>
-                            <h1>$725,000</h1>
-                        </FadeInSection>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #: ML81738746</p>
-                                <p>Sq Ft: 1,306</p>
-                                <p>Status: Sold</p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 3</p>
-                                <p>Bathroom: 2</p>
-                                <p>Year Built: 1982</p>
-                            </FadeInSection>
-                            </div>
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h2>Listed by CMB Realty & Mortgage</h2>
-                        </FadeInSection>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list-img">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <ImageBoard2 images={house4_imgs}/>
-                        </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h1>480 Dempsey Rd #182, Milpitas, CA 95035</h1>
-                            <h1>$420,000</h1>
-                        </FadeInSection>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #: ML81717062</p>
-                                <p>Sq Ft: 676</p>
-                                <p>Status: Sold</p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 1</p>
-                                <p>Bathroom: 1</p>
-                                <p>Year Built: 2007</p>
-                            </FadeInSection>
-                            </div>
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <h2>Listed by CMB Realty & Mortgage</h2>
-                            </FadeInSection>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list-img">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <ImageBoard2 images={house5_imgs}/>
-                        </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h1>4619 Capay Dr #1, San Jose, CA 95118</h1>
-                            <h1>$460,000</h1>
-                        </FadeInSection>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #: ML81759095</p>
-                                <p>Sq Ft: 810</p>
-                                <p>Status: Sold</p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 2</p>
-                                <p>Bathroom: 1</p>
-                                <p>Year Built: 1970</p>
-                            </FadeInSection>
-                            </div>
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <h2>Listed by CMB Realty & Mortgage</h2>
-                            </FadeInSection>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list-img">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <ImageBoard2 images={house6_imgs}/>
-                         </FadeInSection>
-                        </div>
-                        <div className="list-desc">
-                        <FadeInSection animationClassName="fade-in-section2">
-                            <h1>97 Alexander Ct, San Jose, CA 95116</h1>
-                            <h1>$725,000</h1>
-                        </FadeInSection>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>MLS #: ML81748847</p>
-                                <p>Sq Ft: 1,240</p>
-                                <p>Status: Sold</p>
-                            </FadeInSection>
-                            </div>
-                            <div className="list-desc-row">
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <p>Bedroom: 3</p>
-                                <p>Bathroom: 1</p>
-                                <p>Year Built: 1946</p>
-                            </FadeInSection>
-                            </div>
-                            <FadeInSection animationClassName="fade-in-section2">
-                                <h2>Listed by CMB Realty & Mortgage</h2>
-                            </FadeInSection>
-                        
-                        </div>
-                    </SwiperSlide>
+                    {houseList}
                 </Swiper>
                 </div>
             </div>

@@ -13,10 +13,11 @@ import './Home.css';
 
 import ImageBoard from '../../components/imgBoard/ImgBoard';
 import Slider from '../../components/slider/Slider';
-import Ham_Button from '../../components/ham_button/Ham_Button';
+import HamButton from '../../components/ham_button/HamButton';
 import FadeInSection from '../../components/fadeinsection/FadeInSection';
 import CustomButton from '../../components/custom_button/Custom_Button';
 import Footer from '../../components/footer/Footer';
+import BsBoxHome from '../../components/bsBoxHome/BsBoxHome';
 
 import oakland from '../../images/oakland.jpg';
 import Christine from '../../images/christine-placeholder.jpg';
@@ -40,7 +41,7 @@ function Home() {
   return (
     <>
       <div className="App">
-        <Ham_Button/>
+        <HamButton/>
       <Parallax strength={-300}  bgImage={oakland} backgroundSize="contain">
           <div className="firstpage">
             <div className="content">
@@ -182,24 +183,11 @@ function Home() {
 
         <Parallax strength={600}>
           <div className='content'>
-            <div className='bs-box'>
-              <div className='bs-img-box'>
-                  <img src='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='key-door' width='100%' height='100%'></img>
-              </div>
-              <div className='bs-box-text'>
-                <div className='bs-box-header'>
-                  <FadeInSection animationClassName='fade-in-section'>
-                      <span>For Buyers</span>
-                    </FadeInSection>
-                </div>
-                <div className='bs-box-desc'>
-                  <FadeInSection animationClassName='fade-in-section'>
-                    <p>At CMB Realty & Mortgage, we recognize that not only is buying a home one of the largest investments you will make in your life, but it is also one of the most stressful. We will take you through the whole buying process from the first preview of your dream home through close of escrow.</p>
-                  </FadeInSection>
-                    <CustomButton navigationLink='/buyers' title='Read More'></CustomButton>
-                </div>
-              </div>
-            </div>
+            <BsBoxHome 
+             title="For Buyers" 
+             imgSrc='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' 
+             desc="At CMB Realty & Mortgage, we recognize that not only is buying a home one of the largest investments you will make in your life, but it is also one of the most stressful. We will take you through the whole buying process from the first preview of your dream home through close of escrow."
+             navLink='/buyers'/>
             <div className='bs-box'>
               <div className='bs-box-text'>
                 <div className='bs-box-header'>

@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme, TextField, Button} from '@mui/material';
 
 import Footer from "../../components/footer/Footer";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
-
+import AgentContact from "../../components/agentContact/AgentContact";
 import "./Contact.css"
 
 import Christine from "../../images/christine-placeholder.jpg";
@@ -48,6 +48,30 @@ const Contact = () => {
             },
         },
       });
+
+    const agents = [
+        {imgSrc: Christine, name:"Christine Minh Bui", title:"Broker / President", office:"Office: (408) 416-3963 | BRE # 01934309", fax:"Fax: (888) 258-9029 | MNLS # 1079239", cell:"Cell: (510) 673-5708", email:"Email: cbui@comcast.net"},
+        {imgSrc: Dan, name:"Dan Hung Tran", title:"Real Estate Agent / Operation Manager", office:"Office: (408) 416-3963 | BRE # 01901911", fax:"Fax: (888) 258-9029 | MNLS # 1079239", cell:"Cell: (408) 560-6695", email:"Email: dan.tran@comcast.net"},
+        {imgSrc: Diana, name:"Diana Thanh Thuy Tran", title:"Broker Associate", office:"Office: (408) 416-3963 | BRE # 01332809", fax:"Fax: (888) 258-9029 | NMLS # 338600", cell:"Cell: (510) 827-7872", email:"Email: dianatran99@hotmail.com"},
+        {imgSrc: Michael, name:"Michael Manabu Yoshihara", title:"Sr. Realtor", office:"Office: (408) 416-3963 | BRE # 01396017", fax:"Fax: (888) 258-9029", cell:"Cell: (408) 712-9259", email:"Email: michael@yoshihara.org"},
+        {imgSrc: Catherina, name:"Catherina Wan Sum Wong", title:"Realtor", office:"Office: (408) 416-3963 | BRE # 01933002", fax:"Fax: (888) 258-9029", cell:"Cell: (916) 337-0591", email:"Email: cw@catherinahomes.com"},
+        {imgSrc: Tuong, name:"Tuong Viet Bui", title:"Sr. Realtor", office:"Office: (408) 416-3963 | BRE # 00926516", fax:"Fax: (888) 258-9029", cell:"Cell: (408) 425-2619", email:"Email: tuongs@gmail.com"},
+        {imgSrc: Janet, name:"Janet H Tran", title:"Sr. Realtor & Mortgage Loan Originator", office:"Office: (408) 416-3963 | BRE: 01503182", fax:"Fax: (888) 258-9029 | NMLS: 063799", cell:"Cell: (408) 858-8718", email:"Email: janettran214@gmail.com"},
+        {imgSrc: Annabelle, name:"Annabelle Vo Golden", title:"Realtor & Mortgage Loan Originatore", office:"Office: (408) 416-3963 | BRE #: 02051093", fax:"Fax: (888) 258-9029 | NMLS #: 968010", cell:"Cell: (408) 334-8388", email:"Email: annabellevo@gmail.com"},
+        {imgSrc: Blank, name:"Angela Thuyanh Nguyen", title:"Broker Associate", office:"Office: (408) 416-3963 | BRE #: 01396020", fax:"Fax: (888) 258-9029 | NMLS #: 333918", cell:"Cell: (916) 833-0321", email:"Email: anhduongn@hotmail.com"},
+    ]
+
+    const agentList = agents.map((agent) => (
+        <AgentContact
+            imgSrc={agent.imgSrc}
+            name={agent.name}
+            title={agent.title}
+            office={agent.office}
+            fax={agent.fax}
+            cell={agent.cell}
+            email={agent.email}
+        />
+    ))
     
     return (
         <>
@@ -189,158 +213,7 @@ const Contact = () => {
                 </FadeInSection>
 
                     <div className="agent-container">
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Christine} alt="Christine" width="200px"></img>
-                                <div className="agent-texts">
-                                    <h2>Christine Minh Bui</h2>
-                                    <p>Broker / President</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 01934309</p>
-                                    <p>Fax: (888) 258-9029 | MNLS # 1079239</p>
-                                    <p>Cell: (510) 673-5708</p>
-                                    <p>Email: cbui@comcast.net</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Dan} alt="Dan" width="200px"></img>
-                                <div className="agent-texts">
-                                    <h2>Dan Hung Tran</h2>
-                                    <p>Real Estate Agent / Operation Manager</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 01901911</p>
-                                    <p>Fax: (888) 258-9029 | MNLS # 1079239</p>
-                                    <p>Cell: (408) 560-6695</p>
-                                    <p>Email: dan.tran@comcast.net</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Diana} alt="Diana" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Diana Thanh Thuy Tran</h2>
-                                    <p>Broker Associate</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 01332809</p>
-                                    <p>Fax: (888) 258-9029 | NMLS # 338600</p>
-                                    <p>Cell: (510) 827-7872</p>
-                                    <p>Email: dianatran99@hotmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Michael} alt="Michael" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Michael Manabu Yoshihara</h2>
-                                    <p>Sr. Realtor</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 01396017</p>
-                                    <p>Fax: (888) 258-9029</p>
-                                    <p>Cell: (408) 712-9259</p>
-                                    <p>Email: michael@yoshihara.org</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Catherina} alt="Catherina" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Catherina Wan Sum Wong</h2>
-                                    <p>Realtor</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 01933002</p>
-                                    <p>Fax: (888) 258-9029</p>
-                                    <p>Cell: (916) 337-0591</p>
-                                    <p>Email: cw@catherinahomes.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Tuong} alt="Tuong" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Tuong Viet Bui</h2>
-                                    <p>Sr. Realtor</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE # 00926516</p>
-                                    <p>Fax: (888) 258-9029</p>
-                                    <p>Cell: (408) 425-2619</p>
-                                    <p>Email: tuongs@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Janet} alt="Janet" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Janet H Tran</h2>
-                                    <p>Sr. Realtor & Mortgage Loan Originator</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE: 01503182</p>
-                                    <p>Fax: (888) 258-9029 | NMLS: 063799  </p>
-                                    <p>Cell: (408) 858-8718   </p>
-                                    <p>Email: janettran214@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Annabelle} alt="Annabelle" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Annabelle Vo Golden</h2>
-                                    <p>Realtor & Mortgage Loan Originatore</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE #: 02051093</p>
-                                    <p>Fax: (888) 258-9029 | NMLS #: 968010  </p>
-                                    <p>Cell: (408) 334-8388  </p>
-                                    <p>Email: annabellevo@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
-
-                        <FadeInSection animationClassName="fade-in-section">
-                        <div className="agent-box">
-                            <div className="agent-img">
-                                <img src={Blank} alt="blank" width="200px" height="260.76"></img>
-                                <div className="agent-texts">
-                                    <h2>Angela Thuyanh Nguyen</h2>
-                                    <p>Broker Associate</p>
-                                    <br></br>
-                                    <p>Office: (408) 416-3963 | BRE #: 01396020</p>
-                                    <p>Fax: (888) 258-9029 | NMLS #: 333918  </p>
-                                    <p>Cell: (916) 833-0321</p>
-                                    <p>Email: anhduongn@hotmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        </FadeInSection>
+                        {agentList}
                     </div>
 
             </div>

@@ -4,7 +4,7 @@ import { Routes, Route, } from 'react-router-dom';
 
 import './App.css';
 import Preloader from './components/preloader/Preloader';
-import Ham_Button from './components/ham_button/Ham_Button';
+import HamButton from './components/ham_button/HamButton';
 
 import Home from './screens/home/Home';
 import Listing from './screens/listings/Listing';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/mortgage" element={<Mortgage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Ham_Button/>
+      <HamButton/>
     </>
   );
 }
