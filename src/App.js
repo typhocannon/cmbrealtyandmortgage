@@ -20,13 +20,13 @@ function App() {
     <>
       <Preloader/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/listings" element={<Listing />} />
-        <Route path="/buyers" element={<Buyer/>} />
-        <Route path="/sellers" element={<Seller />} />
-        <Route path="/mortgage" element={<Mortgage />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/cmbrealtyandmortgage" element={<Home />} />
+        <Route path="/cmbrealtyandmortgage/about" element={<About />} />
+        <Route path="/cmbrealtyandmortgage/listings" element={<Listing />} />
+        <Route path="/cmbrealtyandmortgage/buyers" element={<Buyer/>} />
+        <Route path="/cmbrealtyandmortgage/sellers" element={<Seller />} />
+        <Route path="/cmbrealtyandmortgage/mortgage" element={<Mortgage />} />
+        <Route path="/cmbrealtyandmortgage/contact" element={<Contact />} />
       </Routes>
       <HamButton/>
     </>
