@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cmbrealtyandmortgage/static/css/main.9a13df67.css",
-    "main.js": "/cmbrealtyandmortgage/static/js/main.aa13df07.js",
+    "main.css": "/cmbrealtyandmortgage/static/css/main.f5ed50ad.css",
+    "main.js": "/cmbrealtyandmortgage/static/js/main.e1c98096.js",
     "static/js/787.83c77173.chunk.js": "/cmbrealtyandmortgage/static/js/787.83c77173.chunk.js",
     "static/media/milpitas.png": "/cmbrealtyandmortgage/static/media/milpitas.c60afb97b83b81ed411e.png",
     "static/media/backh6.png": "/cmbrealtyandmortgage/static/media/backh6.c57f90e13fff88739713.png",
@@ -25,7 +25,6 @@
     "static/media/2.jpg": "/cmbrealtyandmortgage/static/media/2.79b2b61e7f03506f0cba.jpg",
     "static/media/1.jpg": "/cmbrealtyandmortgage/static/media/1.f5755da4b95aa6da167c.jpg",
     "static/media/livingroomh3.png": "/cmbrealtyandmortgage/static/media/livingroomh3.7d296cea3c20070021c4.png",
-    "static/media/janet.jpg": "/cmbrealtyandmortgage/static/media/janet.7f8aceef0ca9e3e76eac.jpg",
     "static/media/4.jpg": "/cmbrealtyandmortgage/static/media/4.e72f2224b9e6b77d7074.jpg",
     "static/media/Catherina-Wong.jpg": "/cmbrealtyandmortgage/static/media/Catherina-Wong.a631d76b43fbe8eb7f41.jpg",
     "static/media/bedroomh3.png": "/cmbrealtyandmortgage/static/media/bedroomh3.aa575fab67969ec0a979.png",
@@ -39,14 +38,15 @@
     "static/media/livingroom.jpg": "/cmbrealtyandmortgage/static/media/livingroom.16892e7eedb08f9e33d5.jpg",
     "static/media/kitchenh2.jpg": "/cmbrealtyandmortgage/static/media/kitchenh2.902b86c0d8922809b231.jpg",
     "static/media/AnnabelleGoldenSmall.jpg": "/cmbrealtyandmortgage/static/media/AnnabelleGoldenSmall.5d8d429911c855d49e1e.jpg",
+    "static/media/janet.jpg": "/cmbrealtyandmortgage/static/media/janet.0007a8218b3ed881c722.jpg",
     "static/media/outh4.jpg": "/cmbrealtyandmortgage/static/media/outh4.3e58e7c9b9affc67fbb6.jpg",
     "index.html": "/cmbrealtyandmortgage/index.html",
-    "main.9a13df67.css.map": "/cmbrealtyandmortgage/static/css/main.9a13df67.css.map",
-    "main.aa13df07.js.map": "/cmbrealtyandmortgage/static/js/main.aa13df07.js.map",
+    "main.f5ed50ad.css.map": "/cmbrealtyandmortgage/static/css/main.f5ed50ad.css.map",
+    "main.e1c98096.js.map": "/cmbrealtyandmortgage/static/js/main.e1c98096.js.map",
     "787.83c77173.chunk.js.map": "/cmbrealtyandmortgage/static/js/787.83c77173.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a13df67.css",
-    "static/js/main.aa13df07.js"
+    "static/css/main.f5ed50ad.css",
+    "static/js/main.e1c98096.js"
   ]
 }
