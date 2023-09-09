@@ -3,7 +3,6 @@ import { Parallax } from "react-parallax";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-import ImageBoard2 from "../../components/imageBoard2/imageBoard2";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import CustomButton from "../../components/custom_button/Custom_Button";
 import Footer from "../../components/footer/Footer";
@@ -87,6 +86,7 @@ const Listing = () => {
         <SwiperSlide key={house.name}>
           <ListingItem
             name={house.name}
+            price={house.price}
             imgs={house.imgs}
             MLSlink={house.MLSlink}
             MLSnum={house.MLSnum}

@@ -1,7 +1,5 @@
 import React from "react";
 import FadeInSection from "../fadeinsection/FadeInSection";
-import { SwiperSlide } from 'swiper/react';
-
 
 function SliderItem(props) {
     return(

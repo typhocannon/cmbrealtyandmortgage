@@ -78,7 +78,7 @@ const Seller = () => {
               </div>
 
               <div className='bs-img-box'>
-                  <img src='https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='100%' height='100%'></img>
+                  <img src='https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="sell" width='100%' height='100%'></img>
               </div>
             </div>
             </div>

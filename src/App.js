@@ -20,7 +20,7 @@ function App() {
     <>
       <Preloader/>
       <Routes>
-        <Route path="/cmbrealtyandmortgage" element={<Home />} />
+        <Route path="/cmbrealtyandmortgage/" element={<Home />} />
         <Route path="/cmbrealtyandmortgage/about" element={<About />} />
         <Route path="/cmbrealtyandmortgage/listings" element={<Listing />} />
         <Route path="/cmbrealtyandmortgage/buyers" element={<Buyer/>} />

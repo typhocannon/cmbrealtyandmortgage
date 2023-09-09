@@ -15,35 +15,35 @@ const ImageBoard = () => {
         <ImageList variant="quilted" cols={4} rowHeight={250} sx={{width: '45vw', height: '65vh'}}>
             <ImageListItem cols={2} rows={2} >
                 <ImageListItemBar title="Condominium Entrance"/>
-                <img src={front}></img>
+                <img src={front} alt="condominum"></img>
             </ImageListItem>
             <ImageListItem>
             <ImageListItemBar title="Kitchen"/>
-                <img src={one}></img>
+                <img src={one} alt="kitchen"></img>
             </ImageListItem>
             <ImageListItem>
             <ImageListItemBar title="Wall Decor"/>
-                <img src={two}></img>
+                <img src={two} alt="wall"></img>
             </ImageListItem>
             <ImageListItem>
             <ImageListItemBar title="Living Room view 1"/>
-                <img src={three}></img>
+                <img src={three} alt="living"></img>
             </ImageListItem>
             <ImageListItem>
             <ImageListItemBar title="Bathroom"/>
-                <img src={seven}></img>
+                <img src={seven} alt="bath"></img>
             </ImageListItem>
             <ImageListItem cols={2}>
             <ImageListItemBar title="Living Room view 2"/>
-                <img src={five}></img>
+                <img src={five} alt="living2"></img>
             </ImageListItem>
             <ImageListItem cols={2} rows={2}>
             <ImageListItemBar title="Bedroom 1"/>
-                <img src={six}></img>
+                <img src={six} alt="bed1"></img>
             </ImageListItem>
             <ImageListItem cols={2}>
             <ImageListItemBar title="Bedroom 2"/>
-                <img src={four}></img>
+                <img src={four} alt="bed2"></img>
             </ImageListItem>
             
         </ImageList>

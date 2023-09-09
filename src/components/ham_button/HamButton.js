@@ -38,20 +38,20 @@ const HamButton = () => {
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
             <div classname="router">
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/about">About Us</NavLink>
-              <NavLink to="/listings">Listings</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/">Home</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/about">About Us</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/listings">Listings</NavLink>
               <div className="row">
-              <NavLink to="/buyers">For Buyers</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/buyers">For Buyers</NavLink>
               </div>
               <div className='row'> 
                 <h1>|</h1>
               </div>
               <div className="row">
-              <NavLink to="/sellers">For Sellers</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/sellers">For Sellers</NavLink>
               </div>
-              <NavLink to="/mortgage">Mortgage</NavLink>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/mortgage">Mortgage</NavLink>
+              <NavLink to="/cmbrealtyandmortgage/contact">Contact Us</NavLink>
             </div>
           </motion.div>
         )}

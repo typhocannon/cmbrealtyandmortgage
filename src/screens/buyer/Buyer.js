@@ -6,7 +6,6 @@ import "./Buyer.css"
 import BuyerItem from "../../components/buyer-item/Buyer-item";
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import Footer from "../../components/footer/Footer";
-import sunset from "../../images/cottoncandy_sunset.jpg";
 import mtsummit from "../../images/GOPR0260.jpg";
 
 

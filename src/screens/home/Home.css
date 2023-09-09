@@ -65,40 +65,54 @@ body {
   /* background-color: #1B1C1E; */
 }
 
-.christine-img {
-  margin-right: 40px;
+.christine-box{
+  margin-left: 13%;
+  margin-right: 5%;
 }
 
-.christine-title {
-  z-index: 1;
+.christine-img {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  margin-left: 10%;
 }
+
+
+.christine-title {
+  margin-top: 5%;
+}
+
+.img-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  left: 5;
+}
+
 .gold-box {
-  position: absolute;
-  top: 20%;
-  left: 17%;
-  width: 620px;
-  height: 740px;
+  position: flex;
+  width: 28%;
+  height: 60%;
   background-color: rgb(194, 161, 63);
   opacity: 70%;
-  z-index: 0;
-  border-radius: 10px
 }
 
 .text-box {
-  border-radius: 20px;
-  width: 850px;
-  height: 850px;
-  font-size: 20px;
-  margin-left: 40px;
-  margin-left: 3%;
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  font-size: 3em;
+  margin-top: 4%;
+  margin-right: 10%;
 }
 
 .header {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 100px;
+  margin-bottom: 5%;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.header span {
   text-align: left;
 }
 
@@ -117,6 +131,11 @@ body {
 
 .thirdpage-bg {
   display: flex;
+}
+
+.header-agents {
+  font-size: 8em;
+  margin-bottom: 2%;
 }
 
 .content-2 {
@@ -191,8 +210,8 @@ body {
 
 .bs-img-box {
   display: inline-block;
-  width: 30%;
-  height: 80%;
+  width: 20%;
+  height: 60%;
   margin: 2%;
 }
 

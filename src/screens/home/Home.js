@@ -79,23 +79,18 @@ function Home() {
               <div className="secondpage-content">
 
               <div className='christine-box'>
+                  <div className="gold-box"/>
 
-                <div className = "christine-img">
-                  <div className="gold-box"></div>
+                  <div className='img-desc'>
+                    <FadeInSection animationClassName='fade-in-section'>
+                      <img src={Christine} width="160%" height="auto" alt='Christine Minh Bui'></img>
+                    </FadeInSection>
                   <FadeInSection animationClassName='fade-in-section'>
-                    <img src={Christine} width="650" height="750" alt='Christine Minh Bui'></img>
+                    <div className="christine-title">
+                      <p>Christine Minh Bui, Real Estate & Mortgage Broker, BRE #: 01334386 | NMLS #: 256327</p>
+                    </div>
                   </FadeInSection>
-                </div>
-                <FadeInSection animationClassName='fade-in-section'>
-
-                <div className="christine-title">
-                  <p>Christine Minh Bui</p>
-                  <p>Real Estate & Mortgage Broker</p>
-                  <p>BRE #: 01334386 | NMLS #: 256327</p>
-                </div>
-                </FadeInSection>
-
-
+                  </div>
               </div>
 
 
@@ -129,7 +124,7 @@ function Home() {
           <Parallax strength={600}>
               <div className="thirdpage-bg">
                 <div className='content-2'>
-                <div className="header">
+                <div className="header-agents">
                   <FadeInSection animationClassName='fade-in-section'>
                   <span>Our Agents</span>
                   </FadeInSection>
@@ -187,7 +182,7 @@ function Home() {
              title="For Buyers" 
              imgSrc='https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' 
              desc="At CMB Realty & Mortgage, we recognize that not only is buying a home one of the largest investments you will make in your life, but it is also one of the most stressful. We will take you through the whole buying process from the first preview of your dream home through close of escrow."
-             navLink='/buyers'/>
+             navLink='/cmbrealtyandmortgage/buyers'/>
             <div className='bs-box'>
               <div className='bs-box-text'>
                 <div className='bs-box-header'>
@@ -222,7 +217,7 @@ function Home() {
               <FadeInSection animationClassName='fade-in-section'>
                 <p>Exploring real estate opportunities?</p>
                 <p>Whether you're considering selling, listing, mortgage options, or seeking general advice, we've got you covered.</p>
-                <CustomButton navigationLink='/contact' title='Click Here'></CustomButton>
+                <CustomButton navigationLink='/cmbrealtyandmortgage/contact' title='Click Here'></CustomButton>
               </FadeInSection>
             </div>
               <div className='behind-box'></div>

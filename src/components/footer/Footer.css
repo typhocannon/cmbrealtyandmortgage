@@ -1,16 +1,18 @@
+
 .footer-container {
     position: relative;
     bottom: 0;
-    height: 30%;
-    background-color: #151515;
+    height: 15vh;
     padding-top: 2%;
+    background-color: #151515;
 
 }
 
 .page-foot {
     height: 20vh;
-    background-color: #151515;
     color: #FBFCD4;
+    background-color: #151515;
+
 }
 
 .logo {
@@ -18,12 +20,16 @@
     display: inline-block;
     width: 30%;
     padding-right: 50%;
+    background-color: #151515;
+
 }
 
 .footer-text {
     position:relative;
     display: inline-block;
     width: 30%;
+    background-color: #151515;
+
 }
 
 .footer-text h1 {
@@ -40,7 +46,7 @@
 
 .copyright {
     position: relative;
-    margin-top: 2%;
+    margin-top: 1%;
     color: rgb(177, 177, 177);
     background-color: #151515;
 
