@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import {MdKeyboardArrowDown} from "react-icons/md";
-import {PiLightbulb, PiPinwheel, PiCubeTransparent, PiPersonArmsSpread, PiShieldPlus, PiMagnifyingGlass, PiCompass, PiStarFour} from "react-icons/pi"
+import {PiLightbulb, PiPinwheel, PiPersonArmsSpread, PiShieldPlus, PiCompass, PiStarFour} from "react-icons/pi"
 import { TbHomeDollar, TbHome, TbCoins, TbExposure } from "react-icons/tb"
 import FadeInSection from "../../components/fadeinsection/FadeInSection";
 import CustomButton from "../../components/custom_button/Custom_Button";
@@ -16,10 +16,8 @@ const About = () => {
     const reasons = [
       {header:"Expertise", materialUI:<PiLightbulb size={75} color="goldenrod"/>, desc:"Seasoned professionals with extensive experience in mortgages, loans, and realty solutions."},
       {header:"Effortless Solutions", materialUI:<PiPinwheel size={75} color="goldenrod"/>, desc:"Dedicated to providing hassle-free mortgage and realty services."},
-      {header:"Comprehensive Services", materialUI:<PiCubeTransparent size={75} color="goldenrod"/>, desc:"Offers a wide range of real estate services, from mortgages to loans."},
       {header:"Customer-Centric", materialUI:<PiPersonArmsSpread size={75} color="goldenrod"/>, desc:"Prioritizes customer satisfaction and tailors solutions to individual needs."},
       {header:"Trusted Professionals", materialUI:<PiShieldPlus size={75} color="goldenrod"/>, desc:"Team of trusted experts known for their reliability and professionalism."},
-      {header:"Transparent Process", materialUI:<PiMagnifyingGlass size={75} color="goldenrod"/>, desc:"Clear and transparent communication throughout the entire process."},
       {header:"Personalized Guidance", materialUI:<PiCompass size={75} color="goldenrod"/>, desc:"Offers personalized guidance to navigate the complex real estate market."},
       {header:"Commitment to Quality", materialUI:<PiStarFour size={75} color="goldenrod"/>, desc:"Committed to providing high-quality services that exceed expectations."},
     ]

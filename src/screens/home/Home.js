@@ -83,13 +83,15 @@ function Home() {
 
                   <div className='img-desc'>
                     <FadeInSection animationClassName='fade-in-section'>
-                      <img src={Christine} width="160%" height="auto" alt='Christine Minh Bui'></img>
+                      <img src={Christine} alt='Christine Minh Bui' className='christine-img'></img>
                     </FadeInSection>
-                  <FadeInSection animationClassName='fade-in-section'>
-                    <div className="christine-title">
-                      <p>Christine Minh Bui, Real Estate & Mortgage Broker, BRE #: 01334386 | NMLS #: 256327</p>
-                    </div>
-                  </FadeInSection>
+                    <FadeInSection animationClassName='fade-in-section'>
+                      <div className="christine-title">
+                        <p>Christine Minh Bui</p>
+                        <p>Real Estate & Mortgage Broker</p>
+                        <p>BRE #: 01334386 | NMLS #: 256327</p>
+                      </div>
+                    </FadeInSection>
                   </div>
               </div>
 

@@ -62,18 +62,16 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  /* background-color: #1B1C1E; */
 }
 
 .christine-box{
   margin-left: 13%;
-  margin-right: 5%;
+  width: auto;
+  height: 100%;
 }
 
 .christine-img {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  width: 100%;
 }
 
 
@@ -82,17 +80,23 @@ body {
 }
 
 .img-desc {
+  width: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  left: 5;
+  text-align: justify;
+}
+
+.img-desc img {
+  height: auto;
+  width: 35em;
 }
 
 .gold-box {
   position: flex;
-  width: 28%;
-  height: 60%;
+  width: 80%;
+  height: 70%;
   background-color: rgb(194, 161, 63);
   opacity: 70%;
 }
