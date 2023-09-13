@@ -17,9 +17,9 @@ const Footer = () => {
                     <h2>BRE #: 01934309 | NMLS #: 1079239</h2>
                 </div>
 
-            <div className="copyright">
-                <p>Copyright 2006-2023 CMB Realty & Mortgage, Inc. All Rights Reserved</p>
-            </div>
+                <div className="copyright">
+                    <p>Copyright 2006-2023 CMB Realty & Mortgage, Inc. All Rights Reserved</p>
+                </div>
             </div>
 
         </div>
