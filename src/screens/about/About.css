@@ -1,7 +1,6 @@
 .about-page {
     background-color: #151515;
     color: #FBFCD4;
-    /* justify-content: column; */
 
 }
 
@@ -20,7 +19,6 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width:50%;
     height:60%;
-    /* background:linear-gradient(to top, #2b261b, #9d873e); */
     background-color: #222121;
     text-align: center;
     flex-direction: column;

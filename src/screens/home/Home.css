@@ -96,7 +96,7 @@ body {
 .gold-box {
   position: flex;
   width: 80%;
-  height: 70%;
+  height: 75%;
   background-color: rgb(194, 161, 63);
   opacity: 70%;
 }
