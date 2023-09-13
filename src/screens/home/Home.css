@@ -82,7 +82,7 @@ body {
 .img-desc {
   width: auto;
   height: 100%;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   align-items: center;
   text-align: justify;
@@ -110,8 +110,9 @@ body {
   margin-right: 10%;
 }
 
+
 .header {
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   width: 100%;
   font-size: 1.5em;
 }
@@ -143,7 +144,7 @@ body {
 }
 
 .content-2 {
-  height: 75vh;
+  height: 90vh;
   width: 100vw;
   color: #FBFCD4;
   display: flex;

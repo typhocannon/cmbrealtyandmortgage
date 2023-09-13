@@ -3,13 +3,19 @@
     position: relative;
     bottom: 0;
     height: 100%;
+    width: 100%;
     padding-top: 2%;
     background-color: #151515;
 
 }
 
+.bg {
+    background-color: #151515;
+}
+
 .page-foot {
     height: 20vh;
+    width: 100%;
     color: #FBFCD4;
     background-color: #151515;
 
@@ -21,6 +27,7 @@
     width: 30%;
     padding-right: 50%;
     background-color: #151515;
+    top: -10%;
 
 }
 
@@ -35,13 +42,13 @@
 .footer-text h1 {
     display: block;
     text-align: left;
-    font-size: 3;
+    font-size: 2vw;
 }
 
 .footer-text h2 {
     display: block;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1vw;
 }
 
 .copyright {
