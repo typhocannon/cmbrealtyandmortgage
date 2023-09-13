@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cmbrealtyandmortgage/static/css/main.429ec96a.css",
+    "main.css": "/cmbrealtyandmortgage/static/css/main.78ff0cd2.css",
     "main.js": "/cmbrealtyandmortgage/static/js/main.43902c6f.js",
     "static/js/787.83c77173.chunk.js": "/cmbrealtyandmortgage/static/js/787.83c77173.chunk.js",
     "static/media/milpitas.png": "/cmbrealtyandmortgage/static/media/milpitas.c60afb97b83b81ed411e.png",
@@ -41,12 +41,12 @@
     "static/media/janet.jpg": "/cmbrealtyandmortgage/static/media/janet.0007a8218b3ed881c722.jpg",
     "static/media/outh4.jpg": "/cmbrealtyandmortgage/static/media/outh4.3e58e7c9b9affc67fbb6.jpg",
     "index.html": "/cmbrealtyandmortgage/index.html",
-    "main.429ec96a.css.map": "/cmbrealtyandmortgage/static/css/main.429ec96a.css.map",
+    "main.78ff0cd2.css.map": "/cmbrealtyandmortgage/static/css/main.78ff0cd2.css.map",
     "main.43902c6f.js.map": "/cmbrealtyandmortgage/static/js/main.43902c6f.js.map",
     "787.83c77173.chunk.js.map": "/cmbrealtyandmortgage/static/js/787.83c77173.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.429ec96a.css",
+    "static/css/main.78ff0cd2.css",
     "static/js/main.43902c6f.js"
   ]
 }
