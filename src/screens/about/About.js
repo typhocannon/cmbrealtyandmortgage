@@ -57,6 +57,7 @@ const About = () => {
                     <div className="box2"></div>
                     <div className="box">
                       <FadeInSection animationClassName="fade-in-section">
+                        {/* comment to be deleted just this comment */}
                         <h1>Our Mission</h1>
                       </FadeInSection>
                       <FadeInSection animationClassName="fade-in-section2">
